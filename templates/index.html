@@ -87,13 +87,72 @@
 	  		<th>NIA</th>
 	  		<th>ASC-ACD</th>
 
+	  		{% for a in ing %}
 	  		<tr>
-	  			{% for a in ing %}
+	  			
 	  			<td>
 	  				{{a.food_id}}
 	  			</td>
-	  			{% endfor %}
+	  			<td>
+	  				{{a.food_and_desc}}
+	  			</td>
+	  			<td>
+	  				{{a.alternate_name}}
+	  			</td>
+	  			<td>
+	  				{{a.water}}
+	  			</td>
+	  			<td>
+	  				{{a.energy}}
+	  			</td>
+	  			<td>
+	  				{{a.protein}}
+	  			</td>
+	  			<td>
+	  				{{a.fat}}
+	  			</td>
+	  			<td>
+	  				{{a.carb}}
+	  			</td>
+	  			<td>
+	  				{{a.crude_fiber}}
+	  			</td>
+	  			<td>
+	  				{{a.ash}}
+	  			</td>
+	  			<td>
+	  				{{a.calcium}}
+	  			</td>
+	  			<td>
+	  				{{a.phosphorus}}
+	  			</td>
+	  			<td>
+	  				{{a.iron}}
+	  			</td>
+	  			<td>
+	  				{{a.retinol}}
+	  			</td>
+	  			<td>
+	  				{{a.bcarotene}}
+	  			</td>
+	  			<td>
+	  				{{a.vitamina}}
+	  			</td>
+	  			<td>
+	  				{{a.thiamin}}
+	  			</td>
+	  			<td>
+	  				{{a.riboflavin}}
+	  			</td>
+	  			<td>
+	  				{{a.niacin}}
+	  			</td>
+	  			<td>
+	  				{{a.ascorbic_acid}}
+	  			</td>
+	  			
 	  		</tr>
+	  		{% endfor %}
   		
   		</table>
 	  </div>

@@ -30,7 +30,7 @@ class Ingredient(db.Model):
     iron = db.Column(db.String(10))
     retinol = db.Column(db.String(10))
     bcarotene = db.Column(db.String(10))
-    vitamin_a = db.Column(db.String(10))
+    vitamina = db.Column(db.String(10))
     thiamin = db.Column(db.String(10))
     riboflavin = db.Column(db.String(10))
     niacin = db.Column(db.String(10))
@@ -82,28 +82,11 @@ def create_database():
 	db.create_all()
 
 	a = Ingredient(food_id='1',food_and_desc='pagkaen',alternate_name='1',water='1',energy='1',protein='1',fat='1',carb='1',
-		crude_fiber='1',ash='1',calcium='1',phosphorus='1',iron='1',retinol='1',bcarotene='1',vitamin_a='1',thiamin='1',
+		crude_fiber='1',ash='1',calcium='1',phosphorus='1',iron='1',retinol='1',bcarotene='1',vitamina='1',thiamin='1',
 		riboflavin='1',niacin='1',ascorbic_acid='1')
 	db.session.add(a)
 	db.session.commit()
 
-	a = Ingredient(food_id='1',food_and_desc='pagkaen',alternate_name='1',water='1',energy='1',protein='1',fat='1',carb='1',
-		crude_fiber='1',ash='1',calcium='1',phosphorus='1',iron='1',retinol='1',bcarotene='1',vitamin_a='1',thiamin='1',
-		riboflavin='1',niacin='1',ascorbic_acid='1')
-	db.session.add(a)
-	db.session.commit()
-
-	a = Ingredient(food_id='1',food_and_desc='pagkaen',alternate_name='1',water='1',energy='1',protein='1',fat='1',carb='1',
-		crude_fiber='1',ash='1',calcium='1',phosphorus='1',iron='1',retinol='1',bcarotene='1',vitamin_a='1',thiamin='1',
-		riboflavin='1',niacin='1',ascorbic_acid='1')
-	db.session.add(a)
-	db.session.commit()
-
-	a = Ingredient(food_id='1',food_and_desc='pagkaen',alternate_name='1',water='1',energy='1',protein='1',fat='1',carb='1',
-		crude_fiber='1',ash='1',calcium='1',phosphorus='1',iron='1',retinol='1',bcarotene='1',vitamin_a='1',thiamin='1',
-		riboflavin='1',niacin='1',ascorbic_acid='1')
-	db.session.add(a)
-	db.session.commit()
     	return 'ok'
 
 
